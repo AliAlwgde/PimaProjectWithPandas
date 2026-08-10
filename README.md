@@ -1,12 +1,12 @@
 This is a basic Exploratory Data Analysis project that explores the same Indiginous Pima tribe diabetes dataset from Kaggle as my previous Numpy project. This project,
 however, focuses on cleaning the data and aggregating it through pandas and drawing visuals through Matplotlib. 
 
-## File 1
+## File 1 (exploringData.py)
 The first file is exploringData.py. In this file, I took the diabetes.csv dataset, did some exploratory analysis on it, and ended up cleaning it by removing zero-coded values
-and created a new file, cleaned_correlation_matrix.csv to better view the correlations between different x-inputs after the data had been cleaned and gain a further 
+and created a new file, *cleaned_correlation_matrix.csv* to better view the correlations between different x-inputs after the data had been cleaned and gain a further 
 understandingof the data.
 
-## File 2
+## File 2 (pimaPandasProject.py)
 After cleaning and gaining a greater understanding of the data, I moved to the pimaPandasProject.py file where the data was aggregated and key statistics, 
 such as the rate of obesity, were calculated. Through this, the following discoveries were made from the dataset: 
 
@@ -32,9 +32,8 @@ When analyzing means by outcome, it was found that women with diabetes on averag
 had 0.15 higher pedigree functions, had a BMI 4 points above non-diabetic women, and generally had much greater skin thickness (almost 80 units thicker), higher glucose, and higher 
 blood pressure. This will be turned into its own CSV files and uploaded onto GitHub with the rest of the project.
 
-In the general correlation matrix, I focused specifically on the relations between glucose and insulin which were the strongest (positive correlation at around 0.7) and 
-will be mapped with matplotlib along with other correlations. While other variables such as skin thickness and BMI were also strong, we want to focus on the relevant biological 
-factors and metrics for diabetes.
+In the general correlation matrix, I focused specifically on the relations between glucose and insulin which was one of the strongest relevant correlations (positive correlation at around 0.6) and 
+will be mapped with matplotlib along with other correlations. While other variables such as skin thickness and BMI also had strong correlations, we want to focus on the biological factors and metrics for diabetes.
 
 ## File 3
 
@@ -42,17 +41,16 @@ After this, I moved on to visiualization in Matplotlib.
 Initialized subplot for relations between multiple variables and the outcomes in scatter plots as well as other visiual representations of the data. 
 *It should be noted that the indices start from 0*
 
-1. This subplot (0,0) is a scatter plot, showing the correlation between pregnancies and insulin, which is a weak positive relationship at 0.07. 
+1. This subplot (0,0) is a scatter plot, showing the correlation between pregnancies and insulin, which is a weak positive relationship at 0.08. 
 the data here nearly lines up into whole numbers, because the number of pregnancies is discrete and may only be whole numbers, not continous, thus why the scatterplot looks the way it does.
 
-2. The subplot at (0,1) represents the correlation between skin thickness and BMI which is a strong, positive correlation at 0.84.
+2. The subplot at (0,1) represents the correlation between skin thickness and BMI which is a positive correlation at 0.67.
 3. This subplot (0,2) compares the data between Glucose and Insulin, a positive correlation at 0.58.
 4. This subplot (1,0) represents the correlation between age and skin thickness, a weak, positive correlation at 0.17.
-5. This subplot (1,1) represents the correlation between insulin and BMI, colored by outcome. It is a weak, positive correlation at 0.22. Visiually, we can infer that
-   diabetic patients cluster at higher levels of insulin slightly higher levels of BMI than non-diabetic patients.
+5. This subplot (1,1) represents the correlation between insulin and BMI, colored by outcome. It is a weak, positive correlation at 0.22. Visiually speaking, diabetic patients cluster at higher levels of insulin and slightly higher levels of BMI than non-diabetic patients.
 6. Histogram (1,2) to show the rate of obesity, overweight and normal weight in the dataset. The majority of the entries in the dataset are obese with a BMI over 30.
 7. Subplot (2,0) is a scatter plot showing the correlation between age and glucose which is a medium positive correlation at around 0.34.
-8. Subplot (2,1) shows the correlation between glucose and BMI, a weak positive correlation at 0.21, grouped by outcomes through color. Diabetic patients to have higher glucose overall, but there is no notable difference between BMI for diabetic and non-diabetic patients.
+8. Subplot (2,1) shows the correlation between glucose and BMI, a weak positive correlation at 0.21, grouped by outcomes through color. Diabetic patients visually have higher glucose overall, but there is no notable difference between BMI for diabetic and non-diabetic patients.
 9. Pie chart (2,2) shows the portion of diabetic to non-diabetic patients, about 1/3 to 2/3. Here we established a python list of colors for the pie chart
 
 
