@@ -53,8 +53,7 @@ the data here nearly lines up into whole numbers, because the number of pregnanc
 6. Histogram (1,2) to show the rate of obesity, overweight and normal weight in the dataset. The majority of the entries in the dataset are obese with a BMI over 30.
 7. Subplot (2,0) is a scatter plot showing the correlation between age and glucose which is a medium positive correlation at around 0.34.
 8. Subplot (2,1) shows the correlation between glucose and BMI, a weak positive correlation at 0.21, grouped by outcomes through color. Diabetic patients to have higher glucose overall, but there is no notable difference between BMI for diabetic and non-diabetic patients.
-9. Pie chart (2,2) shows the portion of diabetic to non-diabetic patients, about 1/3 to 2/3
-10. Here we established a python list of colors for the pie chart
+9. Pie chart (2,2) shows the portion of diabetic to non-diabetic patients, about 1/3 to 2/3. Here we established a python list of colors for the pie chart
 
 
 ## Limitations ## 
