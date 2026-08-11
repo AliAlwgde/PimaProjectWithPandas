@@ -27,7 +27,7 @@ def display(mean, minimum, maximum, std, correlations, diabetic_percentage, nond
     print(f"Mean values for each column:\n: {mean}")
     print(f"\nMinimum values for each column:\n: {minimum}")
     print(f"\nMaximum values for each column:\n: {maximum}")
-    print(f"\nCorrelation matrix:\n: {correlations}")
+    print(f"\nCorrelation with outcome:\n: {correlations}")
     print(f"\nStandard deviation for each column:\n: {std}")
     print(
         f"\nPercentage of diabetic patients in the dataset: {diabetic_percentage:.2f}%")
