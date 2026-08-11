@@ -36,8 +36,8 @@ axes[1, 1].set_title("Insulin vs BMI")
 
 weight_categories = pd.cut(
     data["BMI"],
-    bins=[18.5, 25, 30, float("inf")],
-    labels=["Normal", "Overweight", "Obese"]
+    bins=[0, 18.5, 25, 30, float("inf")],
+    labels=['Underweight', 'Normal', 'Overweight', 'Obese']
 ).value_counts().sort_index()
 
 axes[1, 2].barh(
@@ -49,9 +49,6 @@ axes[1, 2].barh(
 axes[1, 2].set_title("Weight Distribution in the Dataset")
 axes[1, 2].set_xlabel("Frequency")
 axes[1, 2].set_ylabel("BMI Category")
-axes[1, 2].set_title("Weight Distribution in the Dataset")
-axes[1, 2].set_xlabel("BMI")
-axes[1, 2].set_ylabel("Frequency")
 
 axes[2, 0].scatter(data["Age"], data["Glucose"])
 axes[2, 0].set_xlabel("Age")
