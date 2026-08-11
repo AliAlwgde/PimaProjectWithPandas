@@ -26,7 +26,7 @@ About 1/3 of all patients had diabetes, the other 2/3 do not.
 
 The majority of patients are obese at 66.84%, about 21.68% are overweight, and the remaining 11.48% are at normal weight.
 
-When analyzing means by outcome, it was found that women with diabetes on average had almost twice as many pregnancies as non-diabetic women, were generally 7-8 years older, had 0.15 higher pedigree functions, had a BMI 4 points above non-diabetic women, and generally greater skin thickness (almost 5-6 units thicker), higher glucose level by about 5 units, and higher blood pressure by about 6 mmHg.
+When analyzing means by outcome, it was found that women with diabetes on average had almost 165% as many pregnancies on average as non-diabetic women, were generally 7-8 years older, had 0.15 higher pedigree functions, had a BMI 4 points above non-diabetic women, and generally greater skin thickness (almost 5-6 units thicker), higher glucose level by about 33.8 mg/dL, and higher blood pressure by about 6 mmHg.
 
 In the general correlation matrix, I focused specifically on the relations between glucose and insulin which was one of the strongest relevant correlations (positive correlation at around 0.6) and will be mapped with matplotlib along with other correlations. While other variables such as skin thickness and BMI also had strong correlations, we want to focus on the biological factors and metrics for diabetes.
 
